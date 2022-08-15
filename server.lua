@@ -1,5 +1,5 @@
-local token = "sodiufhsdioufhsodiufhsdofiuyhg" --TOKEN
-local ipp = "78.29.175.41" -- IP
+local token = "sodiufhsdioufhsodiufhsdofiuyhgXXX" --TOKEN
+local ipp = "78.29.175.41111" -- IP
 local acesso = nil
 local verificar = nil
 
