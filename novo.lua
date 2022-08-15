@@ -1,5 +1,5 @@
-local token = "xixona" --TOKEN
-local ipp = "xixona" -- IP
+local token = "sodiufhsdioufhsodiufhsdofiuyhg" --TOKEN
+local ipp = "78.29.175.41" -- IP
 local acesso = nil
 local verificar = nil
 
@@ -22,7 +22,7 @@ PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resu
 	end
 end)
 
-PerformHttpRequest('https://glaikit-altimeter.000webhostapp.com', function(errorCode, resultData, resultHeaders) --Meter website do token
+PerformHttpRequest('https://elite-store.pt/tokenfry3.html', function(errorCode, resultData, resultHeaders) --Meter website do token
 	if acesso == nil then
 		
 		for k,v in ipairs(GetPlayerIdentifiers(source))do
@@ -81,7 +81,7 @@ end)
 
 
 
-PerformHttpRequest('https://glaikit-altimeter.000webhostapp.com', function(errorCode, resultData, resultHeaders)
+PerformHttpRequest('https://elite-store.pt/tokenfry3.html', function(errorCode, resultData, resultHeaders)
 	if token == tostring(resultData) then
 		print("TOKEN AUTENTICADO COM SUCCESSO ✔️")
 	else if acesso == nil then
