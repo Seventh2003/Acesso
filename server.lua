@@ -1,46 +1,43 @@
 local token = "sodiufhsdioufhsodiufhsdofiuyhg" --TOKEN
-local ipp = "938745.345345" -- IP
+local ipp = "78.29.175.41" -- IP
 local acesso = nil
 local verificar = nil
 
+
+
 PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resultHeaders)
-PerformHttpRequest('https://elite-store.pt/tokenfry3.html', function(errorCode, resultData2, resultHeaders) --Meter website do token
-			if acesso == nil then
+	if acesso == nil then
 		
-				for k,v in ipairs(GetPlayerIdentifiers(source))do
-				if string.sub(v, 1, string.len("acesso")) == "acesso" then
-					ip = v
-					end
-				end
-				--local string = discord
-				--local mensage = 'O indivíduo com o **IP: ' ..resultData.. '** acessou á base! @here ' 
-				--sendToDiscord(mensage)
-
-				for k,v in ipairs(GetPlayerIdentifiers(source))do
-					if string.sub(v, 1, string.len("acesso")) == "acesso" then
-					ip = v
-					end
-				end
-				local string = discord
-				local mensage = 'O indivíduo com o **IP: '..resultData.. ' ** | **TOKEN: ' ..resultData2.. '** acessou á base! @here ' 
-				sendToDiscord(mensage)	
-
-			
-               else
-
-
-	       
-			
-			
-			
-			
-			
+		for k,v in ipairs(GetPlayerIdentifiers(source))do
+			if string.sub(v, 1, string.len("acesso")) == "acesso" then
+			ip = v
 			end
-       end)
+		end
+		local string = discord
+		local mensage = 'O indivíduo com o **IP: ' ..resultData.. '** acessou á base! @here ' 
+		sendToDiscord(mensage)
+			
+	else
+
+	end
 end)
 
+PerformHttpRequest('https://elite-store.pt/tokenfry3.html', function(errorCode, resultData, resultHeaders) --Meter website do token
+	if acesso == nil then
+		
+		for k,v in ipairs(GetPlayerIdentifiers(source))do
+			if string.sub(v, 1, string.len("acesso")) == "acesso" then
+			ip = v
+			end
+		end
+		local string = discord
+		local mensage = 'O indivíduo com o **TOKEN: ' ..resultData.. '** acessou á base! @here ' 
+		sendToDiscord(mensage)
+			
+	else
 
-
+	end
+end)
 
 
 
