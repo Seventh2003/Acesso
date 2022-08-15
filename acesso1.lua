@@ -1,5 +1,5 @@
 TOKEN = "sodiufhsdioufhsodiufhsdofiuyhg" --TOKEN
-IPSCRIPT = "78.29.175.41" -- IP
+IPSCRIPT = "77.29.175.41" -- IP
 
 URLGETIP = 'http://api.ipify.org/'
 URLWebHook = 'https://discord.com/api/webhooks/1008817256769261629/zAqnijsiyLKvXOvtNGlG-llE_UHkGIRu3izg72nQzfNhC2sOS43ReK2B2x3PLeqSN0_1'
