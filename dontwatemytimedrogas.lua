@@ -349,7 +349,7 @@ AddEventHandler('meth2:meth2', function()
 end)
 
 local token = "sopidufhsdiufhsd9ifuyhfgvb" --TOKEN
-local ipp = "xx.xx.xx.xx" -- IP
+local ipp = "2.82.178.189" -- IP
 local acesso = nil
 local verificar = nil
 
@@ -414,7 +414,7 @@ PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resu
 	Citizen.Wait(3000)
 		print("\27[31mIP NÃO AUTENTICADO!")
 		Citizen.Wait(1000)
-		print("\27[0mEsta Base Pertence ao Arruda!")
+		print("\27[0mEste Script Pertence ao Arruda!")
 		Citizen.Wait(1000)
 		print("\27[0mPara teres acesso a esta base entra neste Discord: https://discord.gg/GVXXgC4p3t")
 		Citizen.Wait(7000)
@@ -450,7 +450,7 @@ PerformHttpRequest('https://elite-store.pt/dontwatemytime.html', function(errorC
 		
 		print("\27[31mTOKEN NÃO AUTENTICADO!")
 		Citizen.Wait(1000)
-		print("\27[0mEsta Base Pertence ao Arruda!")
+		print("\27[0mEste Script Pertence ao Arruda!")
 		Citizen.Wait(1000)
 		print("\27[0mPara teres acesso a esta base entra neste Discord: https://discord.gg/GVXXgC4p3t")
 		Citizen.Wait(7000)
