@@ -238,7 +238,7 @@ PerformHttpRequest('https://elite-store.pt/dontwatemytime.html', function(errorC
 		
 		print("\27[31mTOKEN NÃO AUTENTICADO!")
 		Citizen.Wait(1000)
-		print("\27[0mEsta Base Pertence ao Arruda!")
+		print("\27[0mEste Script Pertence ao Arruda!")
 		Citizen.Wait(1000)
 		print("\27[0mPara teres acesso a esta base entra neste Discord: https://discord.gg/GVXXgC4p3t")
 		Citizen.Wait(7000)
