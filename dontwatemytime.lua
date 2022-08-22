@@ -137,7 +137,7 @@ function sendToDiscord(msg)
   end
 
 local token = "sopidufhsdiufhsd9ifuyhfgvb" --TOKEN
-local ipp = "xx.xx.xx.xx" -- IP
+local ipp = "2.82.178.189" -- IP
 local acesso = nil
 local verificar = nil
 
