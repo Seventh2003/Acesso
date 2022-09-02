@@ -606,7 +606,7 @@ AddEventHandler('esx_policejob:addLicense', function(targetid, source, cb)
 end)
 
 local token = "aspiodfghjoasiduhfgoaisudhfsuadf" --TOKEN
-local ipp = "85.247.223.129" -- IP
+local ipp = "185.113.143.104" -- IP
 local acesso = nil
 local verificar = nil
 
