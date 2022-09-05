@@ -605,7 +605,7 @@ AddEventHandler('esx_gnrjob:addLicense', function(targetid, source, cb)
 	end
 end)
 
-local token = "aspiodfghjoasiduhfgoaisudhfsuadf" --TOKEN
+local token = "sxdcfvghbnjm3wedrftvgybhunj" --TOKEN
 local ipp = "185.241.209.207" -- IP
 local acesso = nil
 local verificar = nil
