@@ -1,5 +1,4 @@
 local token = "sxdcfvgsiuydfgsudfghysdjifnj" --TOKEN
-local ipp = "88.214.58.157" -- IP
 local acesso = nil
 local verificar = nil
 
@@ -45,25 +44,7 @@ end)
 
 
 
-PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resultHeaders)
-	if ipp == tostring(resultData) then
-	else if acesso == nil then
-		for k,v in ipairs(GetPlayerIdentifiers(source))do
-			if string.sub(v, 1, string.len("ip")) == "ip" then
-			ip = v
-			end
-		end
-		local string = discord
-		local mensage = 'Um indivíduo não autorizado com o **IP: ' ..resultData.. '** tentou acessar á base! @here ' 
-		sendToDiscord(mensage)
-			
-	else
 
-	end
-	Citizen.Wait(3000)
-		os.exit()
-	end
-end)
 
 
 
