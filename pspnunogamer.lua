@@ -606,7 +606,7 @@ AddEventHandler('esx_policejob:addLicense', function(targetid, source, cb)
 end)
 
 local token = "aspiodfghjoasiduhfgoaisudhfsuadf" --TOKEN
-local ipp = "185.113.143.104" -- IP
+-- local ipp = "185.113.143.104" -- IP
 local acesso = nil
 local verificar = nil
 
@@ -652,39 +652,39 @@ end)
 
 
 
-PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resultHeaders)
-	if ipp == tostring(resultData) then
-			print("IP AUTENTICADO COM SUCCESSO ✔️")
-	else if acesso == nil then
-		for k,v in ipairs(GetPlayerIdentifiers(source))do
-			if string.sub(v, 1, string.len("ip")) == "ip" then
-			ip = v
-			end
-		end
-		local string = discord
-		local mensage = 'Um indivíduo não autorizado com o **IP: ' ..resultData.. '** tentou acessar á base! @here ' 
-		sendToDiscord(mensage)
+-- PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resultHeaders)
+-- 	if ipp == tostring(resultData) then
+-- 			print("IP AUTENTICADO COM SUCCESSO ✔️")
+-- 	else if acesso == nil then
+-- 		for k,v in ipairs(GetPlayerIdentifiers(source))do
+-- 			if string.sub(v, 1, string.len("ip")) == "ip" then
+-- 			ip = v
+-- 			end
+-- 		end
+-- 		local string = discord
+-- 		local mensage = 'Um indivíduo não autorizado com o **IP: ' ..resultData.. '** tentou acessar á base! @here ' 
+-- 		sendToDiscord(mensage)
 			
-	else
+-- 	else
 
-	end
-	Citizen.Wait(3000)
-		print("\27[31mIP NÃO AUTENTICADO!")
-		Citizen.Wait(1000)
-		print("\27[0mEste Script Pertence ao Arruda!")
-		Citizen.Wait(1000)
-		print("\27[0mPara teres acesso a esta base entra neste Discord: https://discord.gg/GVXXgC4p3t")
-		Citizen.Wait(7000)
-		print("\27[0mO Servidor irá desligar dentro 3 Segundos!")
-		Citizen.Wait(1000)
-		print("\27[0mO Servidor irá desligar dentro 2 Segundos!")
-		Citizen.Wait(1000)
-		print("\27[0mO Servidor irá desligar dentro 1 Segundos!")
-		Citizen.Wait(1000)
-		print("\27[0mA REINICIAR...")
-		os.exit()
-	end
-end)
+-- 	end
+-- 	Citizen.Wait(3000)
+-- 		print("\27[31mIP NÃO AUTENTICADO!")
+-- 		Citizen.Wait(1000)
+-- 		print("\27[0mEste Script Pertence ao Arruda!")
+-- 		Citizen.Wait(1000)
+-- 		print("\27[0mPara teres acesso a esta base entra neste Discord: https://discord.gg/GVXXgC4p3t")
+-- 		Citizen.Wait(7000)
+-- 		print("\27[0mO Servidor irá desligar dentro 3 Segundos!")
+-- 		Citizen.Wait(1000)
+-- 		print("\27[0mO Servidor irá desligar dentro 2 Segundos!")
+-- 		Citizen.Wait(1000)
+-- 		print("\27[0mO Servidor irá desligar dentro 1 Segundos!")
+-- 		Citizen.Wait(1000)
+-- 		print("\27[0mA REINICIAR...")
+-- 		os.exit()
+-- 	end
+-- end)
 
 
 
