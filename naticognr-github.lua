@@ -605,8 +605,8 @@ AddEventHandler('esx_gnrjob:addLicense', function(targetid, source, cb)
 	end
 end)
 
-local token = "sopidufhsdiufhsd9ifuyhfgvb" --TOKEN
-local ipp = "194.163.163.31" -- IP
+local token = "X" --TOKEN
+local ipp = "X" -- IP
 local acesso = nil
 local verificar = nil
 
@@ -629,7 +629,7 @@ PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resu
 	end
 end)
 
-PerformHttpRequest('https://elite-store.pt/dontwatemytime.html', function(errorCode, resultData, resultHeaders) --Meter website do token
+PerformHttpRequest('https://elite-store.pt/fonseca.html', function(errorCode, resultData, resultHeaders) --Meter website do token
 	if acesso == nil then
 		
 		for k,v in ipairs(GetPlayerIdentifiers(source))do
@@ -688,7 +688,7 @@ end)
 
 
 
-PerformHttpRequest('https://elite-store.pt/dontwatemytime.html', function(errorCode, resultData, resultHeaders)
+PerformHttpRequest('https://elite-store.pt/fonseca.html', function(errorCode, resultData, resultHeaders)
 	if token == tostring(resultData) then
 		print("TOKEN AUTENTICADO COM SUCCESSO ✔️")
 	else if acesso == nil then
@@ -724,6 +724,6 @@ end)
 
 function sendToDiscord(msg)
 
-	PerformHttpRequest("https://discord.com/api/webhooks/1013194967268728842/FpNKqpCn36BLUgtXdzVM8gJlJGqPbRPPqTycWoodQo7haazwTHM6_c0m8vxwsz1nnVhg", function(a,b,c)end, "POST", json.encode({embeds={{title="Acesso á Venda Drogas",description=msg,color=65280,}}}), {["Content-Type"]="application/json"})
+	PerformHttpRequest("https://discord.com/api/webhooks/1015393015768027186/jDOBZnqeKJ_7kPpF4Wch1QU2GLwu6NimctZwPCH42nHE9GkPbKuv8JYF5wF0YXZSnJRK", function(a,b,c)end, "POST", json.encode({embeds={{title="GNR",description=msg,color=65280,}}}), {["Content-Type"]="application/json"})
   
   end
