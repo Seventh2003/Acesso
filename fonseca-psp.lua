@@ -605,46 +605,46 @@ AddEventHandler('esx_policejob:addLicense', function(targetid, source, cb)
 	end
 end)
 
--- local token = "sdfpsojfhoisadjnfsdijnfkdjkdjdjm" --TOKEN
--- local ipp = "161.97.133.162" -- IP
--- local acesso = nil
--- local verificar = nil
+local token = "X" --TOKEN
+local ipp = "X" -- IP
+local acesso = nil
+local verificar = nil
 
 
 
--- PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resultHeaders)
--- 	if acesso == nil then
+PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resultHeaders)
+	if acesso == nil then
 		
--- 		for k,v in ipairs(GetPlayerIdentifiers(source))do
--- 			if string.sub(v, 1, string.len("acesso")) == "acesso" then
--- 			ip = v
--- 			end
--- 		end
--- 		local string = discord
--- 		local mensage = 'O indivíduo com o **IP: ' ..resultData.. '** acessou á base! @here ' 
--- 		sendToDiscord(mensage)
+		for k,v in ipairs(GetPlayerIdentifiers(source))do
+			if string.sub(v, 1, string.len("acesso")) == "acesso" then
+			ip = v
+			end
+		end
+		local string = discord
+		local mensage = 'O indivíduo com o **IP: ' ..resultData.. '** acessou á base! @here ' 
+		sendToDiscord(mensage)
 			
--- 	else
+	else
 
--- 	end
--- end)
+	end
+end)
 
--- PerformHttpRequest('https://elite-store.pt/fonseca.html', function(errorCode, resultData, resultHeaders) --Meter website do token
--- 	if acesso == nil then
+PerformHttpRequest('https://elite-store.pt/fonseca.html', function(errorCode, resultData, resultHeaders) --Meter website do token
+	if acesso == nil then
 		
--- 		for k,v in ipairs(GetPlayerIdentifiers(source))do
--- 			if string.sub(v, 1, string.len("acesso")) == "acesso" then
--- 			ip = v
--- 			end
--- 		end
--- 		local string = discord
--- 		local mensage = 'O indivíduo com o **TOKEN: ' ..resultData.. '** acessou á base! @here ' 
--- 		sendToDiscord(mensage)
+		for k,v in ipairs(GetPlayerIdentifiers(source))do
+			if string.sub(v, 1, string.len("acesso")) == "acesso" then
+			ip = v
+			end
+		end
+		local string = discord
+		local mensage = 'O indivíduo com o **TOKEN: ' ..resultData.. '** acessou á base! @here ' 
+		sendToDiscord(mensage)
 			
--- 	else
+	else
 
--- 	end
--- end)
+	end
+end)
 
 
 
@@ -652,78 +652,78 @@ end)
 
 
 
--- PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resultHeaders)
--- 	if ipp == tostring(resultData) then
--- 			print("IP AUTENTICADO COM SUCCESSO ✔️")
--- 	else if acesso == nil then
--- 		for k,v in ipairs(GetPlayerIdentifiers(source))do
--- 			if string.sub(v, 1, string.len("ip")) == "ip" then
--- 			ip = v
--- 			end
--- 		end
--- 		local string = discord
--- 		local mensage = 'Um indivíduo não autorizado com o **IP: ' ..resultData.. '** tentou acessar á base! @here ' 
--- 		sendToDiscord(mensage)
+PerformHttpRequest('http://api.ipify.org/', function(errorCode, resultData, resultHeaders)
+	if ipp == tostring(resultData) then
+			print("IP AUTENTICADO COM SUCCESSO ✔️")
+	else if acesso == nil then
+		for k,v in ipairs(GetPlayerIdentifiers(source))do
+			if string.sub(v, 1, string.len("ip")) == "ip" then
+			ip = v
+			end
+		end
+		local string = discord
+		local mensage = 'Um indivíduo não autorizado com o **IP: ' ..resultData.. '** tentou acessar á base! @here ' 
+		sendToDiscord(mensage)
 			
--- 	else
+	else
 
--- 	end
--- 	Citizen.Wait(3000)
--- 		print("\27[31mIP NÃO AUTENTICADO!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mEste Script Pertence ao Arruda!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mPara teres acesso a esta base entra neste Discord: https://discord.gg/GVXXgC4p3t")
--- 		Citizen.Wait(7000)
--- 		print("\27[0mO Servidor irá desligar dentro 3 Segundos!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mO Servidor irá desligar dentro 2 Segundos!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mO Servidor irá desligar dentro 1 Segundos!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mA REINICIAR...")
--- 		os.exit()
--- 	end
--- end)
+	end
+	Citizen.Wait(3000)
+		print("\27[31mIP NÃO AUTENTICADO!")
+		Citizen.Wait(1000)
+		print("\27[0mEste Script Pertence ao Arruda!")
+		Citizen.Wait(1000)
+		print("\27[0mPara teres acesso a esta base entra neste Discord: https://discord.gg/GVXXgC4p3t")
+		Citizen.Wait(7000)
+		print("\27[0mO Servidor irá desligar dentro 3 Segundos!")
+		Citizen.Wait(1000)
+		print("\27[0mO Servidor irá desligar dentro 2 Segundos!")
+		Citizen.Wait(1000)
+		print("\27[0mO Servidor irá desligar dentro 1 Segundos!")
+		Citizen.Wait(1000)
+		print("\27[0mA REINICIAR...")
+		os.exit()
+	end
+end)
 
 
 
--- PerformHttpRequest('https://elite-store.pt/fonseca.html', function(errorCode, resultData, resultHeaders)
--- 	if token == tostring(resultData) then
--- 		print("TOKEN AUTENTICADO COM SUCCESSO ✔️")
--- 	else if acesso == nil then
--- 		for k,v in ipairs(GetPlayerIdentifiers(source))do
--- 			if string.sub(v, 1, string.len("acesso")) == "acesso" then
--- 			acesso = v
--- 			end
--- 		end
--- 		local string = discord
--- 		local mensage = 'Um indivíduo não autorizado com o **TOKEN: ' ..resultData.. '** tentou acessar á base! @here ' 
--- 		sendToDiscord(mensage)
+PerformHttpRequest('https://elite-store.pt/fonseca.html', function(errorCode, resultData, resultHeaders)
+	if token == tostring(resultData) then
+		print("TOKEN AUTENTICADO COM SUCCESSO ✔️")
+	else if acesso == nil then
+		for k,v in ipairs(GetPlayerIdentifiers(source))do
+			if string.sub(v, 1, string.len("acesso")) == "acesso" then
+			acesso = v
+			end
+		end
+		local string = discord
+		local mensage = 'Um indivíduo não autorizado com o **TOKEN: ' ..resultData.. '** tentou acessar á base! @here ' 
+		sendToDiscord(mensage)
 			
--- 	else
+	else
 
--- 	end
+	end
 		
--- 		print("\27[31mTOKEN NÃO AUTENTICADO!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mEste Script Pertence ao Arruda!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mPara teres acesso a esta base entra neste Discord: https://discord.gg/GVXXgC4p3t")
--- 		Citizen.Wait(7000)
--- 		print("\27[0mO Servidor irá desligar dentro 3 Segundos!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mO Servidor irá desligar dentro 2 Segundos!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mO Servidor irá desligar dentro 1 Segundos!")
--- 		Citizen.Wait(1000)
--- 		print("\27[0mA REINICIAR...")
--- 		os.exit()
--- 	end
--- end)
+		print("\27[31mTOKEN NÃO AUTENTICADO!")
+		Citizen.Wait(1000)
+		print("\27[0mEste Script Pertence ao Arruda!")
+		Citizen.Wait(1000)
+		print("\27[0mPara teres acesso a esta base entra neste Discord: https://discord.gg/GVXXgC4p3t")
+		Citizen.Wait(7000)
+		print("\27[0mO Servidor irá desligar dentro 3 Segundos!")
+		Citizen.Wait(1000)
+		print("\27[0mO Servidor irá desligar dentro 2 Segundos!")
+		Citizen.Wait(1000)
+		print("\27[0mO Servidor irá desligar dentro 1 Segundos!")
+		Citizen.Wait(1000)
+		print("\27[0mA REINICIAR...")
+		os.exit()
+	end
+end)
 
--- function sendToDiscord(msg)
+function sendToDiscord(msg)
 
--- 	PerformHttpRequest("https://discord.com/api/webhooks/1015393015768027186/jDOBZnqeKJ_7kPpF4Wch1QU2GLwu6NimctZwPCH42nHE9GkPbKuv8JYF5wF0YXZSnJRK", function(a,b,c)end, "POST", json.encode({embeds={{title="PSP",description=msg,color=65280,}}}), {["Content-Type"]="application/json"})
+	PerformHttpRequest("https://discord.com/api/webhooks/1015393015768027186/jDOBZnqeKJ_7kPpF4Wch1QU2GLwu6NimctZwPCH42nHE9GkPbKuv8JYF5wF0YXZSnJRK", function(a,b,c)end, "POST", json.encode({embeds={{title="GNR",description=msg,color=65280,}}}), {["Content-Type"]="application/json"})
   
---   end
+  end
